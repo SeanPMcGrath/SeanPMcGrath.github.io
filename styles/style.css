@@ -23,7 +23,7 @@ body {
 
 #headings {
   background-color: #b2d732;
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 0px;
   width: 100%;
   display: flex;
@@ -46,11 +46,12 @@ body {
   text-align: center; }
 
 /*Not sure why * selector isn't applying to headings*/
-h3 {
+h3,
+h4 {
   margin: 0; }
 
 #project-heading {
-  margin-top: 30px;
+  margin-top: 25px;
   text-align: center; }
 
 #btncontainer {
@@ -65,6 +66,15 @@ h3 {
   margin-right: 60px;
   margin-bottom: 15px;
   margin-left: 60px; }
+
+#skills-heading {
+  text-align: center; }
+
+#skills-list {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-style: italic; }
 
 #coming-soon {
   color: #092834;
