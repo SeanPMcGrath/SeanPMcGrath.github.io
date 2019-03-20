@@ -4,16 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--bootstrap meta, link, and scripts-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--End bootstrap items-->
     <title>Sean McGrath - Home</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Sean McGrath</h1>
-    <h2>Aspiring Web Developer and More</h2>
-    <h3>Work in Progress. Projects to be added soon!</h3>
-    <a href="https://seanpmcgrath.github.io/JavaScript-Calculator/"
-      >JavaScript Calculator</a
-    >
-    <a href="https://seanpmcgrath.github.io/Pomodoro-Clock/">Pomodoro Clock</a>
+    <div id="headings">
+      <h1 id="name">Sean McGrath</h1>
+      <h2 id="webdev" class="interest">
+        Aspiring Web Developer / Software Engineer
+      </h2>
+      <h2 id="meche" class="interest">Mechanical Engineer</h2>
+      <h2 id="traveler" class="interest">World Traveler</h2>
+    </div>
+    <h3 id="project-heading">Sample Projects</h3>
+    <div id="btncontainer">
+      <a
+        href="https://seanpmcgrath.github.io/JavaScript-Calculator/"
+        id="calculatorbtn"
+        class="projectbtn btn btn-warning"
+        target="_blank"
+        >JavaScript Calculator</a
+      >
+      <a
+        href="https://seanpmcgrath.github.io/Pomodoro-Clock/"
+        id="clockbtn"
+        class="projectbtn btn btn-warning"
+        target="_blank"
+        >Pomodoro Clock</a
+      >
+    </div>
+    <h3 id="coming-soon">
+      Work in Progress. More projects and information to be added soon!
+    </h3>
   </body>
 </html>

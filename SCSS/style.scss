@@ -1,10 +1,96 @@
-$c-h1: seagreen;
-$c-h2: lightseagreen;
+$c-background: #f0f7d4;
+$c-heading-background: #b2d732;
+$c-name: #092834;
+$c-interest: $c-name;
+$c-comingsoon: $c-name;
 
-h1 {
-  color: $c-h1;
+/*Color scheme colors
+#F0F7D4 tan
+#B2D732 lime green
+#66B032 darker green
+#1489B8 slightly lighter marine blue
+#347B98 marine blue
+#092834 almost black blue
+#FC600A orange
+*/
+
+/*CSS reset*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: Helvetica;
 }
 
-h2 {
-  color: $c-h2;
+body {
+  background-color: $c-background;
+}
+
+#headings {
+  background-color: $c-heading-background;
+  margin-top: 50px;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#name {
+  color: $c-name;
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+}
+
+#webdev {
+  width: 100%;
+}
+
+.interest {
+  color: $c-interest;
+  font-size: 18px;
+  width: 200px;
+  text-align: center;
+}
+
+/*Not sure why * selector isn't applying to headings*/
+h3 {
+  margin: 0;
+}
+
+#project-heading {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#btncontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.projectbtn {
+  margin-top: 15px;
+  margin-right: 60px;
+  margin-bottom: 15px;
+  margin-left: 60px;
+}
+
+#coming-soon {
+  color: $c-comingsoon;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  #headings {
+    margin-top: 0px;
+  }
 }
