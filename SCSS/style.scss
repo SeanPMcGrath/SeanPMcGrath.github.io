@@ -1,4 +1,4 @@
-$c-background: #f0f7d4;
+$c-background: #d9d9d9; /* #f0f7d4;*/
 $c-heading-background: #b2d732;
 $c-name: #092834;
 $c-interest: $c-name;
@@ -23,45 +23,79 @@ $c-comingsoon: $c-name;
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-  font-family: Helvetica;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
   background-color: $c-background;
 }
 
-#headings {
-  background-color: $c-heading-background;
-  margin-top: 40px;
-  padding: 0px;
-  width: 100%;
+#intro {
   display: flex;
-  justify-content: space-evenly;
+  height: 100vh;
+}
+
+#myCarousel {
+  width: auto;
+  max-width: 55%;
+  padding: 10px;
+  //background-color: blue;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#headings {
+  //background: $c-heading-background;
+  padding: 0 40px 60px 40px;
+  width: 45%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
 #name {
   color: $c-name;
-  font-size: 36px;
-  width: 100%;
-  text-align: center;
+  font-size: 60px;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
 }
 
-#webdev {
-  width: 100%;
+#carousel-controls-div {
+  position: relative;
+  width: 200px;
+  margin: -50px auto 50px auto;
+}
+
+.carousel-indicators {
+  top: 0px;
+}
+
+.intro-slides {
+  height: 100vh;
+  max-width: 100vw;
+  margin: auto;
+}
+
+.carousel-control {
+  width: 4%;
 }
 
 .interest {
   color: $c-interest;
   font-size: 18px;
-  width: 200px;
-  text-align: center;
+  text-align: left;
+  font-family: "Lusitana", serif;
 }
 
 /*Not sure why * selector isn't applying to headings*/
 h3,
 h4 {
   margin: 0;
+  font-family: "Raleway", sans-serif;
+  color: $c-name;
 }
 
 #project-heading {
@@ -92,17 +126,38 @@ h4 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-style: italic;
+  font-family: "Lusitana", serif;
 }
 
 #coming-soon {
   color: $c-comingsoon;
   width: 100%;
   text-align: center;
+  margin: 0 0 10px 0;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
+  #intro {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   #headings {
-    margin-top: 0px;
+    width: 100vw;
+    padding: 0 40px 20px 40px;
+  }
+
+  #name {
+    text-align: center;
+    width: 100%;
+  }
+
+  #myCarousel {
+    max-width: 100vw;
+  }
+
+  .interest {
+    text-align: center;
   }
 }

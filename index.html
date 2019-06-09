@@ -9,21 +9,67 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <!--End bootstrap items-->
+    <link href="https://fonts.googleapis.com/css?family=Lusitana|Raleway&display=swap" rel="stylesheet"> 
     <title>Sean McGrath - Home</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div id="headings">
-      <h1 id="name">Sean McGrath</h1>
-      <h2 id="webdev" class="interest">
-        Aspiring Web Developer / Software Engineer
-      </h2>
-      <h2 id="meche" class="interest">Mechanical Engineer</h2>
-      <h2 id="traveler" class="interest">World Traveler</h2>
+    <!--
+    <div id="intro-slideshow">
+      <img
+        class="intro-slides"
+        src="https://live.staticflickr.com/2879/32968986203_ba0f520473_k.jpg"
+        alt="Valle de Cocora, Colombia"
+      />
+    -->
+    <div id="intro">
+        <div id="headings">
+            <h1 id="name">Sean McGrath</h1>
+            <h2 id="webdev" class="interest">
+              Aspiring Web Developer / Software Engineer
+            </h2>
+            <h2 id="meche" class="interest">Mechanical Engineer</h2>
+            <h2 id="traveler" class="interest">World Traveler</h2>
+          </div>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div id="slide-wrapper" class="carousel-inner">
+          <div class="slide-div item active">
+            <img class="intro-slides img-circle" src="https://live.staticflickr.com/1754/27586019327_4de17ae9c5_k.jpg" alt="Khajuraho, India">
+          </div>
+      
+          <div class="slide-div item">
+            <img class="intro-slides img-circle" src="https://live.staticflickr.com/1746/41732536074_57c0671181_k.jpg" alt="Danakil Depression, Ethiopia">
+          </div>
+      
+          <div class="slide-div item">
+            <img class="intro-slides img-circle" src="https://live.staticflickr.com/1737/40648024690_5c58a72239_k.jpg" alt="Humayun’s Tomb, Delhi, India">
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <div id="carousel-controls-div">      
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
     </div>
+    </div>
+
+    
+    
     <h3 id="project-heading">Sample Projects</h3>
     <div id="btncontainer">
       <a
@@ -56,5 +102,9 @@
     <h3 id="coming-soon">
       Work in Progress. More projects and information to be added soon!
     </h3>
+
+    <!--jquery and bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </body>
 </html>

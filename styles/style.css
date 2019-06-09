@@ -1,3 +1,4 @@
+/* #f0f7d4;*/
 /*Color scheme colors
 #F0F7D4 tan
 #B2D732 lime green
@@ -16,71 +17,161 @@
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-  font-family: Helvetica; }
+  font-family: "Raleway", sans-serif;
+}
 
 body {
-  background-color: #f0f7d4; }
+  background-color: #d9d9d9;
+}
+
+#intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+#myCarousel {
+  width: auto;
+  max-width: 55%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 
 #headings {
-  background-color: #b2d732;
-  margin-top: 40px;
-  padding: 0px;
-  width: 100%;
+  padding: 0 40px 60px 40px;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; }
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 
 #name {
   color: #092834;
-  font-size: 36px;
-  width: 100%;
-  text-align: center; }
+  font-size: 60px;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+}
 
-#webdev {
-  width: 100%; }
+#carousel-controls-div {
+  position: relative;
+  width: 200px;
+  margin: -50px auto 50px auto;
+}
+
+.carousel-indicators {
+  top: 0px;
+}
+
+.intro-slides {
+  height: 100vh;
+  max-width: 100vw;
+  margin: auto;
+}
+
+.carousel-control {
+  width: 4%;
+}
 
 .interest {
   color: #092834;
   font-size: 18px;
-  width: 200px;
-  text-align: center; }
+  text-align: left;
+  font-family: "Lusitana", serif;
+}
 
 /*Not sure why * selector isn't applying to headings*/
 h3,
 h4 {
-  margin: 0; }
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  color: #092834;
+}
 
 #project-heading {
   margin-top: 25px;
-  text-align: center; }
+  text-align: center;
+}
 
 #btncontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
 
 .projectbtn {
   margin-top: 15px;
   margin-right: 60px;
   margin-bottom: 15px;
-  margin-left: 60px; }
+  margin-left: 60px;
+}
 
 #skills-heading {
-  text-align: center; }
+  text-align: center;
+}
 
 #skills-list {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-style: italic; }
+  font-family: "Lusitana", serif;
+}
 
 #coming-soon {
   color: #092834;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  margin: 0 0 10px 0;
+}
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
+  #intro {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   #headings {
-    margin-top: 0px; } }
+    width: 100vw;
+    padding: 0 40px 20px 40px;
+  }
+  #name {
+    text-align: center;
+    width: 100%;
+  }
+  #myCarousel {
+    max-width: 100vw;
+  }
+  .interest {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
