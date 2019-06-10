@@ -110,7 +110,8 @@ h4 {
   text-align: center;
 }
 
-#btncontainer {
+#project-container {
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,8 +120,36 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.project-description {
+  padding: 5px;
+  max-width: 400px;
+  margin-top: 15px;
+  margin-right: 60px;
+  margin-bottom: 15px;
+  margin-left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 2px solid #5a5a5a;
+  border-bottom: 2px solid #5a5a5a;
+  border-left: 1px solid #5a5a5a;
+  border-top: 1px solid #5a5a5a;
+  border-radius: 5px;
+  background-color: #e6e6e6;
 }
 
 .projectbtn {
@@ -128,6 +157,7 @@ h4 {
   margin-right: 60px;
   margin-bottom: 15px;
   margin-left: 60px;
+  margin-top: auto;
 }
 
 #skills-heading {
@@ -138,14 +168,6 @@ h4 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: "Lusitana", serif;
-}
-
-#coming-soon {
-  color: #092834;
-  width: 100%;
-  text-align: center;
-  margin: 0 0 10px 0;
 }
 
 @media (max-width: 800px) {

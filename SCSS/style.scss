@@ -1,5 +1,7 @@
 $c-background: #d9d9d9; /* #f0f7d4;*/
 $c-heading-background: #b2d732;
+$c-borders: darken($c-background, 50%);
+$c-projects: lighten($c-background, 5%);
 $c-name: #092834;
 $c-interest: $c-name;
 $c-comingsoon: $c-name;
@@ -103,12 +105,32 @@ h4 {
   text-align: center;
 }
 
-#btncontainer {
+#project-container {
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.project-description {
+  padding: 5px;
+  max-width: 400px;
+  margin-top: 15px;
+  margin-right: 60px;
+  margin-bottom: 15px;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px solid $c-borders;
+  border-bottom: 2px solid $c-borders;
+  border-left: 1px solid $c-borders;
+  border-top: 1px solid $c-borders;
+  border-radius: 5px;
+  background-color: $c-projects;
 }
 
 .projectbtn {
@@ -116,6 +138,7 @@ h4 {
   margin-right: 60px;
   margin-bottom: 15px;
   margin-left: 60px;
+  margin-top: auto; // Keeps element at bottom of container
 }
 
 #skills-heading {
@@ -126,14 +149,6 @@ h4 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: "Lusitana", serif;
-}
-
-#coming-soon {
-  color: $c-comingsoon;
-  width: 100%;
-  text-align: center;
-  margin: 0 0 10px 0;
 }
 
 @media (max-width: 800px) {
