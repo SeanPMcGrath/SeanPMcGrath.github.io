@@ -81,8 +81,8 @@ body {
 }
 
 .intro-slides {
-  height: 100vh;
-  max-width: 100vw;
+  height: auto;
+  max-width: 100%;
   margin: auto;
 }
 
