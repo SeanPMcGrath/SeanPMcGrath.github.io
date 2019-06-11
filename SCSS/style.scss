@@ -1,20 +1,9 @@
-$c-background: #d9d9d9; /* #f0f7d4;*/
-$c-heading-background: #b2d732;
+$c-background: #d9d9d9;
 $c-borders: darken($c-background, 50%);
 $c-projects: lighten($c-background, 5%);
-$c-name: #092834;
-$c-interest: $c-name;
-$c-comingsoon: $c-name;
-
-/*Color scheme colors
-#F0F7D4 tan
-#B2D732 lime green
-#66B032 darker green
-#1489B8 slightly lighter marine blue
-#347B98 marine blue
-#092834 almost black blue
-#FC600A orange
-*/
+$c-font-general: #092834;
+$c-name: $c-font-general;
+$c-interest: $c-font-general;
 
 /*CSS reset*/
 * {
@@ -23,6 +12,7 @@ $c-comingsoon: $c-name;
   border: 0;
   outline: 0;
   font-size: 100%;
+  color: $c-font-general;
   vertical-align: baseline;
   background: transparent;
   font-family: "Raleway", sans-serif;
@@ -37,18 +27,7 @@ body {
   height: 100vh;
 }
 
-#myCarousel {
-  width: auto;
-  max-width: 55%;
-  padding: 10px;
-  //background-color: blue;
-  display: flex;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
 #headings {
-  //background: $c-heading-background;
   padding: 0 40px 60px 40px;
   width: 45%;
   display: flex;
@@ -63,6 +42,22 @@ body {
   font-size: 60px;
   text-align: left;
   font-family: "Raleway", sans-serif;
+}
+
+.interest {
+  color: $c-interest;
+  font-size: 18px;
+  text-align: left;
+  font-family: "Lusitana", serif;
+}
+
+#myCarousel {
+  width: auto;
+  max-width: 55%;
+  padding: 10px;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 #carousel-controls-div {
@@ -85,24 +80,19 @@ body {
   width: 4%;
 }
 
-.interest {
-  color: $c-interest;
-  font-size: 18px;
-  text-align: left;
-  font-family: "Lusitana", serif;
-}
-
 /*Not sure why * selector isn't applying to headings*/
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
   font-family: "Raleway", sans-serif;
-  color: $c-name;
+  color: $c-font-general;
 }
 
 #project-heading {
   margin-top: 25px;
   text-align: center;
+  font-size: 30px;
 }
 
 #project-container {
@@ -115,9 +105,9 @@ h4 {
   margin-bottom: 15px;
 }
 
-.project-description {
-  padding: 5px;
-  max-width: 400px;
+.project-tile {
+  padding: 10px;
+  width: 400px;
   margin-top: 15px;
   margin-right: 60px;
   margin-bottom: 15px;
@@ -133,22 +123,35 @@ h4 {
   background-color: $c-projects;
 }
 
+.project-name {
+  font-size: 22px;
+}
+
+.project-description {
+  font-size: 14px;
+  margin: 10px 0;
+  font-family: "Lusitana", serif;
+}
+
 .projectbtn {
-  margin-top: 15px;
-  margin-right: 60px;
-  margin-bottom: 15px;
-  margin-left: 60px;
   margin-top: auto; // Keeps element at bottom of container
 }
 
 #skills-heading {
   text-align: center;
+  font-size: 30px;
 }
 
 #skills-list {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 18px;
+  list-style: none;
+  /*To change the font of the list items, 
+  need to assign the font family specifically to 
+  the list items can use #skills-list li {}
+  */
 }
 
 @media (max-width: 800px) {
