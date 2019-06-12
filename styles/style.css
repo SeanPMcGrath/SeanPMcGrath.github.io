@@ -88,6 +88,24 @@ body {
   width: 4%;
 }
 
+/*Bootstrap carousel-fade class didn't seem to work
+Adapted from bd16s's post on https://github.com/reactstrap/reactstrap/issues/933*/
+.carousel-inner .carousel-item {
+  opacity: 0;
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  -webkit-transition: opacity 0.75s ease-in;
+  transition: opacity 0.75s ease-in;
+}
+
+.carousel-inner .active {
+  opacity: 1;
+  position: relative;
+}
+
+/* /transition effect settings*/
 /*Not sure why * selector isn't applying to headings*/
 h3,
 h4,
@@ -147,12 +165,14 @@ h5 {
 
 .project-name {
   font-size: 22px;
+  text-align: center;
 }
 
 .project-description {
   font-size: 14px;
   margin: 10px 0;
   font-family: "Lusitana", serif;
+  text-align: justify;
 }
 
 .projectbtn {
@@ -188,7 +208,7 @@ h5 {
             justify-content: center;
   }
   #headings {
-    width: 100vw;
+    width: auto;
     padding: 0 40px 20px 40px;
   }
   #name {
