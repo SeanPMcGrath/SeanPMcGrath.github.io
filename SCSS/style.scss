@@ -148,13 +148,20 @@ h5 {
 
 .project-description {
   font-size: 14px;
-  margin: 10px 0;
+  margin: 10px 0 5px 0;
   font-family: "Lusitana", serif;
   text-align: justify;
 }
 
-.projectbtn {
-  margin-top: auto; // Keeps element at bottom of container
+.btn-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.btn {
+  margin: 5px 5px 0 5px; // Top: auto keeps element at bottom of container
 }
 
 #skills-heading {
