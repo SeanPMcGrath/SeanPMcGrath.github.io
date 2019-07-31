@@ -201,14 +201,24 @@ h5 {
 #skills-list {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 0 10px;
   font-size: 18px;
   list-style: none;
   /*To change the font of the list items, 
   need to assign the font family specifically to 
-  the list items can use #skills-list li {}
+  the list items - can use #skills-list li {}
   */
+}
+
+#footerDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
 }
 
 @media (max-width: 800px) {
